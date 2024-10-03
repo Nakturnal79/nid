@@ -26,7 +26,6 @@ Once the migrations are published, run the migration command:
 
 ```bash
 php artisan migrate
-
 ```
 
 Step 4: Configure Environment Variables
@@ -47,7 +46,6 @@ If you are using Laravel's auto-discovery feature, this step can be skipped. How
 'providers' => [
     Ekeng\Nid\NidServiceProvider::class,
 ],
-
 ```
 
 Step 6: Using the API in Your Application
@@ -56,7 +54,6 @@ To use the NID API in your Laravel application, inject the NidAPI class into you
 
 ```
 $nidApi = new NidAPI($client_id, $client_secret, $base_url, $auth_uri, $nid_token);
-
 ```
 
 Step 7: Available Methods in NidAPI
@@ -68,7 +65,6 @@ Example usage:
 ```
 $redirectUrl = $nidApi->generateAuthRedirectUrl();
 return redirect($redirectUrl);
-
 ```
 
 fetchUserData($accessToken): This method retrieves user data using the access token.
@@ -77,7 +73,6 @@ Example usage:
 
 ```
 $userData = $nidApi->fetchUserData($accessToken);
-
 ```
 
 
