@@ -41,7 +41,7 @@ class NidAPI
         return route('nid.callback');
     }
 
-    public function generateAuthRedirectUrl($lang,$database)
+    public function generateAuthRedirectUrl($database,$lang = null)
     {
         $lngCode = is_null($lang) ? 'hy' : $lang;
         $nidSession = NidSession::generate($database);
