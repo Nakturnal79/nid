@@ -35,7 +35,7 @@ Add the following variables to your .env file, which will be used to connect wit
 NID_CLIENT_ID=your-client-id\
 NID_CLIENT_SECRET=your-client-secret\
 NID_BASE_URI=https://nid.e-gov.am \
-NID_AUTH_URI=auth
+NID_AUTH_URI=auth \
 NID_TOKEN_URI=https://nid.e-gov.am/auth/token
 
 Step 5: Add the Service Provider (if needed)
