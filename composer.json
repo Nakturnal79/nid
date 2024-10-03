@@ -12,6 +12,12 @@
             "email": "support@ekeng.am"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Nakturnal79/nid.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Ekeng\\Nid\\": "src/"
