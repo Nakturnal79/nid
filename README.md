@@ -2,6 +2,17 @@
 
 This package provides an easy integration of the National Identification API (NIDAPI) for Laravel applications. It simplifies the process of authenticating users and interacting with the NIDAPI endpoints.
 
+## Requirements
+
+- **PHP**: >= 7.3
+- **Laravel**: 8.x, 9.x, or higher
+
+## Features
+
+- Easy integration with the National Identification API (NIDAPI)
+- Supports OAuth2 authentication
+- Fetch user data using access tokens
+
 ## Installation
 
 ### Step 1: Install the Package
