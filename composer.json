@@ -1,0 +1,35 @@
+{
+    "name": "ekeng/nid",
+    "description": "Laravel package for nid integration",
+    "require": {
+        "firebase/php-jwt": "6.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "php": ">=7.4"
+    },
+    "authors": [
+        {
+            "name": "Ekeng",
+            "email": "support@ekeng.am"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ekeng\\Nid\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ekeng\\Nid\\NidServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan vendor:publish --tag=migrations"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+
