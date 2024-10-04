@@ -67,7 +67,15 @@ To use the NID API in your Laravel application, inject the NidAPI class into you
 $nidApi = new NidAPI($client_id, $client_secret, $base_url, $auth_uri, $nid_token);
 ```
 
-Step 7: Available Methods in NidAPI
+
+Step 7: Callback URL
+Create callback url and name it "nid_callback" like example below
+
+```
+ Route::get('/nid/callback', [\App\Http\Controllers\LoginController::class,'auth'])->name('nid_callback');
+```
+
+Step 8: Available Methods in NidAPI
 
 generateAuthRedirectUrl(): This method generates a URL for redirecting users to the NID authorization page.
 This method accept two parameters 
@@ -87,15 +95,3 @@ Example usage:
 ```
 $userData = $nidApi->getUserDetails($request);
 ```
-
-
-### Sections in this `README.md`:
-1. **Features**: Briefly explains what the package does.
-2. **Installation**: Detailed steps to install and configure the package.
-3. **Configuration**: Instructions to set up environment variables.
-4. **Usage**: Example on how to use the package in your application with code samples.
-5. **Testing**: A section to encourage users to write tests for their integration.
-6. **Contributing**: Invitation for other developers to contribute to the package.
-7. **License**: License information (assuming it's MIT).
-
-Feel free to adapt or extend this according to your package's specific features!
