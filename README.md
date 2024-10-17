@@ -80,7 +80,7 @@ Step 8: Available Methods in NidAPI
 generateAuthRedirectUrl(): This method generates a URL for redirecting users to the NID authorization page.
 This method accept two parameters 
 
-lang - language path of website (optional)
+$lang - language path of website (optional)
 
 Example usage:
 
