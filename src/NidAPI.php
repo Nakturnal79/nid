@@ -38,15 +38,14 @@ class NidAPI
 
     private function getRedirectUrl()
     {
-        return route('nid.callback');
+        return route('nid_callback');
     }
 
-    public function generateAuthRedirectUrl($database,$lang = null)
+    public function generateRedirectUrl($lang = null)
     {
         $lngCode = is_null($lang) ? 'hy' : $lang;
-        $nidSession = NidSession::generate($database);
+        $nidSession = NidSession::generate('nid_sessions');
         if($nidSession['status'] == 'FAIL'){
-//            return env('APP_URL');
             throw new Exception($nidSession['message']);
         }
         $data = [

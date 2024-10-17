@@ -79,13 +79,13 @@ Step 8: Available Methods in NidAPI
 
 generateAuthRedirectUrl(): This method generates a URL for redirecting users to the NID authorization page.
 This method accept two parameters 
-1. datatable - name of table where will store nid sessions
-2. lang - language path of site (optional)
+
+lang - language path of website (optional)
 
 Example usage:
 
 ```
-$redirectUrl = $nidApi->generateAuthRedirectUrl($datatable_name,$lang);
+$redirectUrl = $nidApi->generateAuthRedirectUrl($lang);
 ```
 
 getUserDetails($request): This method retrieves user data (available after redirecting to back url).
