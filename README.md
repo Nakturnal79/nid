@@ -78,7 +78,7 @@ Create callback url and name it "nid_callback" like example below
 Step 8: Available Methods in NidAPI
 
 generateAuthRedirectUrl(): This method generates a URL for redirecting users to the NID authorization page.
-This method accept two parameters 
+This method accept one parameter 
 
 $lang - language path of website (optional)
 
