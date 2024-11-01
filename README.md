@@ -64,7 +64,7 @@ Step 6: Using the API in Your Application
 To use the NID API in your Laravel application, inject the NidAPI class into your controller or service and create new Instance of NidAPI:
 
 ```
-$nidApi = new NidAPI($client_id, $client_secret, $base_url, $auth_uri, $nid_token);
+$nidApi = new NidAPI($client_id, $client_secret, $base_url, $auth_uri, $token_uri);
 ```
 
 
